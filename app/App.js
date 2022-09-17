@@ -4,6 +4,7 @@ import { BackgroundsController } from "./Controllers/BackgroundsController.js";
 import { ListsController } from "./Controllers/ListsController.js";
 import { QuotesController } from "./Controllers/QuotesController.js";
 import { WeathersController } from "./Controllers/WeathersController.js";
+import { ClocksController } from "./Controllers/ClocksController.js";
 
 class App {
   // valuesController = new ValuesController();
@@ -15,6 +16,8 @@ class App {
   quotesController = new QuotesController()
 
   weathersController = new WeathersController()
+
+  clocksController = new ClocksController()
   
 }
 
