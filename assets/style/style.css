@@ -1,0 +1,25 @@
+body{
+  background-color: cadetblue;
+  font-family: 'Nunito Sans', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: cadetblue;
+}
+
+.bottom-row {
+  justify-content: space-between;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.271);
+  width: fit-content;
+  
+}
+
+.text-shadow{
+  color: aliceblue;
+  text-shadow: 1px 1px rgb(59, 59, 59), 0px 0px 5px rgba(204, 204, 204, 0.719);
+  font-weight: bolder;
+  /* letter-spacing: 0.08rem; */
+}
