@@ -2,7 +2,7 @@ import { setHTML } from "../Utils/Writer.js";
 
 function _setTime() {
   let today = new Date();
-  let clock = today.getHours() + ":" + today.getMinutes();
+  let clock = today.getHours() + ":" + today.getMinutes().toString().padStart(2,'0');
 
   setHTML('clock', clock)
 }

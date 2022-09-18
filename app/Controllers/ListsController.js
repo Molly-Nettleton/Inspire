@@ -2,13 +2,15 @@ import { appState } from "../AppState.js";
 import { sandboxServer } from "../Services/AxiosService.js";
 import { listsService } from "../Services/ListsService.js";
 import { getFormData } from "../Utils/FormHandler.js";
-import { setHTML} from "../Utils/Writer.js";
+import { setHTML, setText} from "../Utils/Writer.js";
 import { Pop } from "../Utils/Pop.js"
 
 function _drawListItems() {
    let template = ''
    appState.lists.forEach(l => template += l.ListItemTemplate)
-   setHTML('list-items', template)
+  setHTML('list-items', template)
+  let toggled = appState.lists.filter(t => t.completed == false)
+  setText('completed', toggled.length)
 }
   
 export class ListsController{
@@ -32,7 +34,8 @@ export class ListsController{
     const form = window.event.target
     let formData = getFormData(form)
     await listsService.addListItems(formData)
-    
+    // @ts-ignore
+    form.reset()
     } catch (error) {
       console.log('[addListItems]', error);
     }
