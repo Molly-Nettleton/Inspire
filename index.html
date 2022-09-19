@@ -22,15 +22,11 @@
   <main class="container-fluid">
     <div class="container-fluid">
 
-      <div class="row p-3 ">
+      <div class="row">
 
         <div class="col-md-3 col-12">
-          <h1><button type="button" onclick="app.backgroundsController.getBackgroundPicture()"
-              class="btn btn-sm m-2 border-white text-light neon-text">Change
-              pic</button>
-            <br>
-            <button type="button" class=" border-white neon-text btn  btn-sm m-2 text-light"
-              onclick="app.quotesController.getQuote()">Change quote</button>
+          <h1 class="mt-2">
+            <i class="mdi mdi-jellyfish neon-text" onclick="app.backgroundsController.getBackgroundPicture()"></i>
           </h1>
         </div>
 
@@ -47,8 +43,8 @@
         <div class="col-2"></div>
 
 
-        <div class="col-1 neon-text rounded">
-          <div class="text-center  text-light">
+        <div class="col-1 neon-text rounded pt-2">
+          <div class="text-center trans-bg p-2 text-light">
             <h5><span id="temp">Temp</span>°F</h5>
             <div id="conditions">Conditions</div>
             <div id="location">Location</div>
@@ -63,7 +59,7 @@
       <div class="row justify-content-center">
         <div class="col-8 text-center text-shadow">
           <div class="quotes d-flex justify-content-center">
-            <h5 class="neon-text p-2">"<span id="quote-content">
+            <h5 class="neon-text p-2">"<span onclick="app.quotesController.getQuote()" id="quote-content">
                 QUOTE</span>"
             </h5>
 
@@ -74,11 +70,11 @@
 
       <div class="row">
         <!-- NOTE CARD START  -->
-        <div class="col-12 col-md-4 ms-5 mt-3 text-light">
+        <div class="col-12 col-md-4 ms-5 text-light">
           <div class="neon-text">
 
-            <div class="completed pt-2 ">
-              <div class="bulletin-font fs-4 mt-3 text-start" id="listname">todo:</div>
+            <div class="completed">
+              <div class="bulletin-font fs-4 text-start" id="listname">todo:</div>
               <div class=""><span id="completed">0/0</span> remaining</div>
             </div>
           </div>
@@ -119,7 +115,7 @@
 
 
     </div>
-    <div class="row p-3">
+    <div class="row p-2">
       <div class="col-12 text-end d-flex justify-content-end">
         <div class="trademark">Image Credit: <span id="trademark-place">trademark</span></div>
   </main>

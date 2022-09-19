@@ -25,4 +25,6 @@ export class WeathersController{
       console.error('[getWeather]', error)
     }
   }
+
+  
 }
