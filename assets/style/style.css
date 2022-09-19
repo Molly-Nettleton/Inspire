@@ -48,9 +48,9 @@ body{
   justify-content: space-between;
 }
 
-input[type="checkbox"]{
-  accent-color: rgb(215, 6, 177);
-}
+/* input[type="checkbox"]:checked{
+  background-color: rgb(215, 6, 177) !important;
+} */
 
 .trademark{
   color: white;

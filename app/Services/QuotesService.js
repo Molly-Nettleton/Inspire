@@ -12,5 +12,6 @@ class QuotesService {
     })
     appState.quote = new Quote(res.data)
   }
+  
 }
 export const quotesService = new QuotesService

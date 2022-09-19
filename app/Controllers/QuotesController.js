@@ -9,7 +9,7 @@ import { setHTML, setText } from "../Utils/Writer.js"
 
 }
   
-export class QuotesController{
+export class QuotesController {
 
   constructor() {
     this.getQuote()
@@ -23,4 +23,5 @@ export class QuotesController{
       console.error('[getQuote]', error)
     }
   }
+
 }
