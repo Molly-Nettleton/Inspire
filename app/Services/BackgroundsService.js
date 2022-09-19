@@ -5,7 +5,11 @@ import { sandboxServer } from "./AxiosService.js"
 class BackgroundsService{
 
   async getBackgroundPicture() {
-    const res = await sandboxServer.get('/api/images')
+    const res = await sandboxServer.get('/api/images', {
+      params: {
+        category:'jellyfish'
+      }
+    })
     appState.backgroundPic = new BackgroundPic(res.data)
     
   }

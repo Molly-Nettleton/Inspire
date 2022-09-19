@@ -1,53 +1,78 @@
 body{
-  background-color: cadetblue;
-  font-family: 'Nunito Sans', sans-serif;
+  background-color: rgb(173, 192, 203);
+  font-family:'Nunito', sans-serif;
+  text-transform: uppercase;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: cadetblue;
+}
+
+.scrollable{
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+.border-white{
+  border: double;
+}
+
+.list-item{
+  background-color: rgba(119, 166, 198, 0.536);
+}
+
+.completed{
+  font-size: small;
+}
+
+.trans-bg{
+  background-color:rgba(119, 166, 198, 0.536);
+  width: fit-content;
+  border-radius: 10px;
+
+}
+
+.neon-text {
+  color: rgb(241, 244, 247);
+  text-shadow:
+    0 0 7px rgb(161, 173, 200),
+    0 0 10px rgb(161, 173, 200),
+    0 0 21px rgb(161, 173, 200),
+    0 0 42px rgb(0, 123, 255),
+    0 0 82px rgb(0, 123, 255),
+    0 0 92px rgb(0, 123, 255),
+    0 0 102px rgb(0, 123, 255),
+    0 0 151px #0fa;
 }
 
 .bottom-row {
   justify-content: space-between;
 }
 
-.card {
-  background-color: rgba(169, 169, 169, 0.420);
-  width: fit-content;
-  
+input[type="checkbox"]{
+  accent-color: rgb(92, 152, 95);
 }
 
 .trademark{
   color: white;
-  font-size: smaller;
+  font-size: 12px;
+  font-style: italic;
+  opacity: 75%;
 }
 
-.quotes{
- font-size: 20px;
-}
 
 .weather{
-   background-color: rgba(169, 169, 169, 0.420);
-   font-size: 16px;
-   font-style: italic;
-   max-height: 10rem;
-   border-radius: 10px;
-   font-weight: 600;
+  max-width: max-content;
+  font-size: smaller;
+  background-color: rgba(103, 124, 138, 0.768);
+  padding: 1rem;
 }
-
 
 .clock{
-  margin-left: 30rem;
-  margin-right: 30rem;
-  font-size: 80px;
-  background-color: rgba(169, 169, 169, 0.420);
-  border-radius: 30px;
+  font-size: 50px;
 }
 
-.text-shadow{
-    color: rgb(230, 236, 241);
-  text-shadow: 1px 1px rgb(61, 61, 61), 0px 0px 5px rgba(149, 146, 180, 0.719);
-  letter-spacing: 0.08rem;
+.date{
+  text-align: center;
+  font-size: xx-large;
   
-  /* letter-spacing: 0.08rem; */
 }

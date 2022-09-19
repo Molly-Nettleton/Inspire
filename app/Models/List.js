@@ -12,14 +12,16 @@ export class List {
 
   get ListItemTemplate() {
     return /*html*/`
-              <div class="d-flex justify-content-around align-items-baseline">
+              <div class="d-flex justify-content-between">
               
-                <input onchange="app.listsController.toggleListItem('${this.id}')" class="form-check-input"
-                  ${this.completed ? 'checked' : '' } type="checkbox" name="completed">
-                  <div class="text">
-<p >${this.description}</p></div>
+                <input type="checkbox" onchange="app.listsController.toggleListItem('${this.id}')" class="form-check-input"
+                  ${this.completed ? 'checked' : '' }  name="completed">
+
+                  <div class="list-item text rounded px-4">
+${this.description}</div>
+
                 <i onclick="app.listsController.deleteListItem('${this.id}')" class="mdi mdi-close selectable"></i>
-              </div>`
+              </div><br>`
   }
   
   
